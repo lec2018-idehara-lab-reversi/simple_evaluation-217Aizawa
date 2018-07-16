@@ -305,9 +305,9 @@ Move getMove(int[][] b, int te)
     {
       if( turn(b, te, x, y) != 0 )
       {
-        int newScore = evaluateMove(b, te, x, y);
+        int newScore = evaluateMove(b, te, x, y);//evaluateMoveで価値を計算している。
         // もしも新しい手の価値のほうが、今覚えている手の価値より高いならば
-        if(  )
+        if(currentScore < newScore )
         {
           // その手を覚え
           result.x = x;
